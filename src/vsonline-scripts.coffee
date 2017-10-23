@@ -303,7 +303,7 @@ client_id=#{appId}\
   createVsoClient = ({url, collection, user, apiVersion}) ->
     url ||= accountBaseUrl
     collection ||= accountCollection
-    apiVersion || = DEFAULT_API_VERSION
+    apiVersion ||= DEFAULT_API_VERSION
 
     if impersonate
       token = vsoData.getOAuthTokenForUser user.id
